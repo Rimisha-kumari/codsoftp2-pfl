@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif; 
+}
+html{
+    overflow-x: hidden;
+}
+/* body{
+    background-color: #B33791;
+    color: var(--tertiary);
+} */
+ section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+ }
+:root{
+   --primaryone :#B33791;
+   --secondary:#C562AF;
+   --tertiary:#DB8DD0;
+   --quaternary:#FEC5F6;
+}
+/*code for header*/
+.heading{
+    position: fixed;
+    width:100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 20px 40px;
+    background-color: var(--primaryone);
+   transition: all 0.3s ease;
+}
+.logo{
+    font-size:3rem;
+    color: var(--tertiary);
+    font-weight: 500;
+    cursor: pointer;
+    transition:all 0.3s ease;
+}
+.navbar a{
+    font-size: 1rem;
+    color: white;
+    margin-left:4rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.navbar a:hover,.navbar a:active{
+    color:var(--tertiary)
+
+}
+#menu-icon{
+    font-size: 1.6rem;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+/*home section code*/
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--quaternary);
+}
+.home-img img{
+width:25vw;
+border-radius:50%;
+box-shadow:0 0 20px var(--primaryone);
+cursor: pointer;
+animation: floatImage 4s ease-in-out infinite;
+transition:0.4s ease ;
+}
+.home-img img:hover{
+   box-shadow:0 0 20px var(--primaryone),
+              0 0 30px var(--primaryone),
+              0 0 40px var(--primaryone);
+}
+@keyframes floatImage {
+    0%{
+        transform: translateY(0);
+    }
+     50%{
+        transform: translateY(2rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.home-content{
+    margin-left: 5rem;
+
+}
+.home-content h3{
+    font-size: 3.7rem;
+    font-weight: 700;
+}
+.home-content h3:nth-child(2){
+    margin-bottom: 2rem;
+}
+span{
+    color: var(--primaryone);
+}
+.home-content h1{
+    font-size: 5rem;
+    font-weight: 700;
+}
+.home-content p{
+    font-size: 1.5rem;
+}
+.social-media a {
+     display: inline-flex;
+     justify-content: center;
+     align-items: center;
+     width: 42px;
+     height: 42px;
+     background: transparent;
+     border:0.2rem solid var(--tertiary);
+     border-radius: 50%;
+     font-size: 2rem;
+     color: var(--primaryone);
+     margin: 3rem 1.5rem 3rem 0;
+     transition: 0.3s ease;
+    }
+    .social-media a:hover{
+        transform: translateY(-10px);
+        background-color: var(--tertiary);
+        color: #FEC5F6;
+        box-shadow: 0 0 25px var(--primaryone);
+}
+
+/*code for about me section*/
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background: var(--quaternary);
+
+}
+.aboutme-img img{
+    width: 25vw;
+    border: 2px solid var(--secondary);
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--primaryone);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.aboutme-img img:hover{
+    transform: translateY(2rem);
+    box-shadow:0 0 20px var(--primaryone),
+              0 0 30px var(--primaryone),
+              0 0 40px var(--primaryone);
+}
+.about-content .aboutheading{
+  font-size: 5rem;
+  text-align: left;
+}
+.about-content h2{
+    text-align: left;
+    line-height: 1.2;
+}
+.about-content h3{
+    font-size:3rem ;
+}
+.about-content p{
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+.btn{
+    display: inline-block;
+    padding: 1rem 1rem;
+    background: var(--primaryone);
+    color: var(--quaternary);
+    font-weight: 300;
+    transition: 0.3s ease;
+    border-radius: 20px;
+    box-shadow: none;
+    font-size: 1.2rem;
+}
+.btn:hover{
+    box-shadow:0 0 40px var(--primaryone);
+}
+/*code for skills section*/
+.skills h2{
+    margin-bottom: 5rem;
+}
+.skills-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.skills-container .skills-box{
+    flex: 1 1 30rem ;
+    background:var(--quaternary);
+    padding: 4rem 2rem 4rem;
+    border-radius: 15px;
+    text-align: center;
+    border: 2px solid var(--primaryone);
+    transition: 0.3s ease;
+}
+.skills-container .skills-box:hover{
+    border-color: var(--secondary);
+    transform:scale(1.02) ;
+
+}
+.skills-box i{
+    font-size:6rem ;
+    color: #C562AF;
+}
+.skills-box h3{
+    font-size: 2rem;
+}
+.skills-box p{
+  font-size:1.6rem;
+}
+.skills h2{
+    font-size: 5rem;
+}
+
+/*projects section*/
+.projects{
+    background: var(--quaternary);
+}
+.project-box{
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.project .project-heading{
+    margin-bottom: 5rem;
+}
+.project-box img{
+    width: 15rem;
+    /* height: 15rem; */
+    border-radius: 50%;
+     border: 2px solid var(--primaryone);
+     box-shadow:0 0 25px var(--secondary) ;
+}
+.wrapper{
+    display: grid;
+     grid-template-columns: repeat(3,1fr); 
+    gap: 20rem;
+}
+.project-item{
+    min-height:450px;
+    max-width: 450px;
+    background: var(--tertiary);
+    border: 2px solid var(--quaternary);
+    border-radius: 20px;
+    margin: 0 2 rem;
+    padding: 20px 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    color: 1.5rem;
+    transition: 0.3s ease;
+}
+.project-item:hover{
+    border-color: var(--primaryone);
+    transform: translateY(1.02);
+}
+.project-item h2{
+    font-size: 3rem;
+
+}
+.project-item a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--primaryone);
+    border: 2px solid black;
+    border-radius: 10px;
+    background: transparent;
+}
+.project-item a:hover{
+    background: var(--quaternary);
+}
+.project-heading{
+    font-size: 5rem;
+}
+
+/*Contact Me section*/
+.contact{
+    background-color: var(--quaternary);
+}
+.contact h2{
+    margin-bottom: 3rem;
+    
+}
+.contact form{
+    max-width: 80rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3REM;
+}
+.contact form .input{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contact form .input input,.contact form input{
+   width: 100%;
+   padding: 1.5rem;
+   font-size: 1.6rem;
+   color: var(--primaryone);
+   background: white;
+   border-radius: 0.8rem;
+   border: 0.2rem solid var(--primaryone);
+   margin: 0.7rem 0;
+   resize: none;
+}
+.contact form .input input{
+    width: 40%;
+    margin: 0.7rem 0.35rem;
+}
+.contact form .btn{
+    display: inline-block;
+    padding: 1rem 1rem;
+    background: var(--primaryone);
+    color: var(--quaternary);
+    font-weight: 300;
+    transition: 0.3s ease;
+    border-radius: 20px;
+    box-shadow: none;
+    font-size: 1.2rem;
+}
+ .contact.btn:hover{
+    box-shadow:0 0 40px var(--primaryone);
+}
+.contact-heading{
+    font-size: 5rem;
+}
